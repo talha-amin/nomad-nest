@@ -12,26 +12,26 @@ export default function Tours() {
   const data = [
     {
       image: tour1,
-      title: "Santorini, Oia Greece",
-      price: 2000,
+      title: "Coffee Wagera (Karachi)",
+      price: "200/Hour",
       reviews: "5k Reviews",
     },
     {
       image: tour2,
-      title: "Lighthouse, Bellwood",
-      price: 4000,
-      reviews: "5k Reviews",
+      title: "The Wing.PK (Islamabad)",
+      price: "400/Hour",
+      reviews: "2k Reviews",
     },
     {
       image: tour3,
-      title: "Riverfront, Japan",
-      price: 3000,
-      reviews: "5k Reviews",
+      title: "DayPass.pk (Lahore)",
+      price: "300/Hour",
+      reviews: "3k Reviews",
     },
   ];
   return (
     <Section id="tour">
-      <h2>Choose Your Destination</h2>
+      <h2>Choose Your Co-Working Space</h2>
       <img src={ellipse} alt="ellipse" className="ellipse" />
       <div className="tours">
         {data.map(({ image, title, price, reviews }, index) => {

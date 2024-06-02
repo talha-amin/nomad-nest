@@ -9,6 +9,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import Services from "./components/Services";
 import Testimonial from "./components/Testimonial";
 import Tours from "./components/Tours";
+import Chatbot from "./components/Chatbot";
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
       <ScrollToTop />
       <Navbar />
       <Home />
+      <Chatbot />
       <Services />
       <Destinations />
       <Offer />

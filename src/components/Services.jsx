@@ -8,23 +8,23 @@ export default function Services() {
   const data = [
     {
       image: service1,
-      title: "Choose Destination",
-      description: "Lorem Ipsum is simply dummy text of the printing setting",
+      title: "Explore Nomad Nest",
+      description: "Our website contains state of the art features such as AIChatBot, Pakistan Trip Booking and much more",
     },
     {
       image: service2,
-      title: "Explore the Place",
-      description: "Lorem Ipsum is simply dummy text of the printing setting",
+      title: "Find Your Co-Working Space",
+      description: "Coming to Pakistan and unable to find a quite and peaceful working space? Explore our options near your residence",
     },
     {
       image: service3,
-      title: "Start Your Journey",
-      description: "Lorem Ipsum is simply dummy text of the printing setting",
+      title: "Ready For An Adventure?",
+      description: "Planning a trip this summer? Well we got you covered with a fun filled itinerary. Hover on the images below!",
     },
     {
       image: service4,
-      title: "Let's Enjoy",
-      description: "Lorem Ipsum is simply dummy text of the printing setting",
+      title: "Bootcamps,Events,Meet-ups?",
+      description: "Wanna socialize and engage in deep conversations with liekly minded people? Signup for our newsletter to learn more about upcoming events.",
     },
   ];
   return (

@@ -1,40 +1,102 @@
 import React from "react";
 import styled from "styled-components";
+import Slider from "react-slick";
 import testimonial1 from "../assets/testimonial1.png";
 import testimonial2 from "../assets/testimonial2.png";
 import avatar from "../assets/avatar.png";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 export default function Testimonial() {
+  const testimonials = [
+    {
+      image: testimonial1,
+      avatar: avatar,
+      name: "Alice Johnson",
+      position: "Marketing Specialist",
+      description:
+        "Nested Nomads is the best travel agency I have ever used. They helped me find the perfect coworking space in Bali. The local support and seamless booking process made my work trip stress-free and productive. Highly recommend!",
+    },
+    {
+      image: testimonial2,
+      avatar: avatar,
+      name: "Michael Brown",
+      position: "Freelance Writer",
+      description:
+        "I had an amazing experience with Nested Nomads. They found a beautiful workspace for me in Karachi with stunning views and great amenities. Their team was very helpful and responsive throughout the entire process.",
+    },
+    {
+      image: testimonial1,
+      avatar: avatar,
+      name: "Emily Davis",
+      position: "Graphic Designer",
+      description:
+        "Nested Nomads provided excellent service during my stay in Tokyo. The coworking space they recommended was fantastic and well-equipped. It was a pleasure working with their friendly and professional team.",
+    },
+    {
+      image: testimonial2,
+      avatar: avatar,
+      name: "David Lee",
+      position: "Software Developer",
+      description:
+        "I've used several coworking space finders before, but Nested Nomads stands out. They not only found a great spot for me in Amsterdam but also ensured that all my requirements were met. Their attention to detail is commendable.",
+    },
+    {
+      image: testimonial1,
+      avatar: avatar,
+      name: "Sophia Martinez",
+      position: "Entrepreneur",
+      description:
+        "Nested Nomads helped me find the perfect coworking space in Lahore. The location was convenient, and the amenities were top-notch. Their service is a game-changer for digital nomads like me.",
+    },
+    {
+      image: testimonial2,
+      avatar: avatar,
+      name: "James Wilson",
+      position: "Digital Marketing Consultant",
+      description:
+        "I highly recommend Nested Nomads for their exceptional service. They assisted me in finding a fantastic coworking space in Lisbon. The environment was perfect for productivity, and their support was outstanding.",
+    },
+  ]
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+  };
+
   return (
-    <Section id="blog">
+    <Section id="testimonial">
       <div className="title">
-        <h1>What our Happy Customers Say About Us</h1>
+        <h1>What our Users Are Saying About Us</h1>
       </div>
-      <div className="testimonials">
-        <div className="testimonial-image-one">
-          <img src={testimonial1} alt="testimonials" />
-        </div>
-        <div className="testimonial">
-          <div className="title">
-            <div className="image">
-              <img src={avatar} alt="avatar" />
-            </div>
-            <div className="info">
-              <h3>Kishan Sheth</h3>
-              <span>Full Stack Developer</span>
+      <Slider {...settings}>
+        {testimonials.map((testimonial, index) => (
+          <div className="testimonial" key={index}>
+            <div className="testimonial-content">
+              <div className="testimonial-image">
+                <img src={testimonial.image} alt="testimonial" />
+              </div>
+              <div className="testimonial-text">
+                <div className="title">
+                  <div className="image">
+                    <img src={testimonial.avatar} alt="avatar" />
+                  </div>
+                  <div className="info">
+                    <h3>{testimonial.name}</h3>
+                    <span>{testimonial.position}</span>
+                  </div>
+                </div>
+                <p className="description">{testimonial.description}</p>
+              </div>
             </div>
           </div>
-          <p className="desrciption">
-            Jetrips Hotel is an excellent choice for anybody for considering
-            hosting their events there. Top level facilities and excellent staff
-            make for a briallant environment within which to operate. The hotel
-            is meticulous in its planning.
-          </p>
-        </div>
-        <div className="testimonial-image-two">
-          <img src={testimonial2} alt="testimonials" />
-        </div>
-      </div>
+        ))}
+      </Slider>
     </Section>
   );
 }
@@ -49,58 +111,74 @@ const Section = styled.section`
       width: 30%;
     }
   }
-  .testimonials {
-    display: flex;
-    gap: 4rem;
-    .testimonial {
-      margin-top: 4rem;
-      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-      padding: 4rem 3rem;
-      height: max-content;
+  .slick-slider {
+    .slick-dots {
+      bottom: -30px;
+    }
+  }
+  .testimonial {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+
+    .testimonial-content {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .testimonial-image img {
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+    }
+
+    .testimonial-text {
       display: flex;
       flex-direction: column;
-      gap: 2rem;
-      border-top: 0.5rem solid var(--primary-color);
+      gap: 1rem;
+
       .title {
         display: flex;
         gap: 1rem;
-        justify-content: center;
         align-items: center;
-        .image {
-          img {
-            height: 3rem;
-          }
+
+        .image img {
+          height: 3rem;
         }
+
         .info {
+          h3 {
+            margin: 0;
+          }
+
           span {
             color: var(--primary-color);
           }
         }
       }
-      .desrciption {
+
+      .description {
         font-size: 1.1rem;
         line-height: 1.5rem;
       }
     }
   }
+
   @media screen and (min-width: 280px) and (max-width: 1080px) {
-    margin-top: 5rem;
-    .title {
-      display: flex;
-      justify-content: center;
-      h1 {
-        text-align: center;
-        font-size: 1.5rem;
-        width: 80%;
-      }
+    .title h1 {
+      font-size: 1.5rem;
+      width: 80%;
     }
-    .testimonials {
+
+    .testimonial-content {
       flex-direction: column;
-      overflow: hidden;
-      .testimonial-image-one,
-      .testimonial-image-two {
-        max-inline-size: 100%;
-        block-size: auto;
+      align-items: center;
+
+      .testimonial-image img {
+        width: 100%;
+        height: auto;
       }
     }
   }
