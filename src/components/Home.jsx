@@ -90,14 +90,14 @@ body {
   background: rgba(255, 255, 255, 0.8);
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transform: translateX(-550px);
+  transform: translateX(-310px);
 
 }
 
 .search-bar {
   margin-top: 20px;
   text-align: center;
-  transform: translateY(-800px);
+  transform: translateY(-300px);
 
 }
 

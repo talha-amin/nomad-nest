@@ -41,7 +41,6 @@ const CloseButton = styled.button`
   border: none;
   font-size: 2.5rem;
   cursor: pointer;
-  transform: translateX(2217px);
 
 `;
 

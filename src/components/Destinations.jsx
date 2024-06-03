@@ -483,11 +483,17 @@ const Section = styled.section`
     gap: 2rem;
     .destination {
       position: relative;
+      flex: 1;
       .image-container {
         position: relative;
+        width: 100%;
+        height: 20rem; /* Adjust the height as needed */
+        overflow: hidden;
         img {
-          height: 20rem;
-          width: 100%; /* Ensure the image covers the container */
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
           display: block;
         }
         .overlay {
