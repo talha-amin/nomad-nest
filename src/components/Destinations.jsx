@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import karachi from "../assets/jinnah.png";
+import karachi from "../assets/Jinnah.png";
 import lahore from "../assets/minar.png";
 import islamabad from "../assets/faisal.png";
 import skardu from "../assets/skardu.png";
