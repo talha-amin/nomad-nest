@@ -54,7 +54,7 @@ export default function Footer() {
       </div>
       <div className="lower-footer">
         <span>
-          Copyright &copy; Travel. Designed by <a href="#">Nested Nomads</a>
+          Copyright &copy; Travel. Designed by <a href="#">Nomads Nest</a>
         </span>
       </div>
     </Container>

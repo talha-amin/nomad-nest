@@ -15,7 +15,7 @@ export default function Testimonial() {
       name: "Alice Johnson",
       position: "Marketing Specialist",
       description:
-        "Nested Nomads is the best travel agency I have ever used. They helped me find the perfect coworking space in Bali. The local support and seamless booking process made my work trip stress-free and productive. Highly recommend!",
+        "Nomads Nest is the best travel agency I have ever used. They helped me find the perfect coworking space in Bali. The local support and seamless booking process made my work trip stress-free and productive. Highly recommend!",
     },
     {
       image: testimonial2,
@@ -23,7 +23,7 @@ export default function Testimonial() {
       name: "Michael Brown",
       position: "Freelance Writer",
       description:
-        "I had an amazing experience with Nested Nomads. They found a beautiful workspace for me in Karachi with stunning views and great amenities. Their team was very helpful and responsive throughout the entire process.",
+        "I had an amazing experience with Nomads Nest. They found a beautiful workspace for me in Karachi with stunning views and great amenities. Their team was very helpful and responsive throughout the entire process.",
     },
     {
       image: testimonial1,
@@ -31,7 +31,7 @@ export default function Testimonial() {
       name: "Emily Davis",
       position: "Graphic Designer",
       description:
-        "Nested Nomads provided excellent service during my stay in Tokyo. The coworking space they recommended was fantastic and well-equipped. It was a pleasure working with their friendly and professional team.",
+        "Nomads Nest provided excellent service during my stay in Tokyo. The coworking space they recommended was fantastic and well-equipped. It was a pleasure working with their friendly and professional team.",
     },
     {
       image: testimonial2,
@@ -39,7 +39,7 @@ export default function Testimonial() {
       name: "David Lee",
       position: "Software Developer",
       description:
-        "I've used several coworking space finders before, but Nested Nomads stands out. They not only found a great spot for me in Amsterdam but also ensured that all my requirements were met. Their attention to detail is commendable.",
+        "I've used several coworking space finders before, but Nomads Nest stands out. They not only found a great spot for me in Amsterdam but also ensured that all my requirements were met. Their attention to detail is commendable.",
     },
     {
       image: testimonial1,
@@ -47,7 +47,7 @@ export default function Testimonial() {
       name: "Sophia Martinez",
       position: "Entrepreneur",
       description:
-        "Nested Nomads helped me find the perfect coworking space in Lahore. The location was convenient, and the amenities were top-notch. Their service is a game-changer for digital nomads like me.",
+        "Nomads Nest helped me find the perfect coworking space in Lahore. The location was convenient, and the amenities were top-notch. Their service is a game-changer for digital nomads like me.",
     },
     {
       image: testimonial2,

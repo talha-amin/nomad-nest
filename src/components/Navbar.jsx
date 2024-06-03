@@ -30,19 +30,19 @@ export default function Navbar() {
       <div className={`links ${isNavOpen ? "show" : ""}`}>
         <ul>
           <li>
-            <a href="#services">Home</a>
+            <a href="#services">Explore</a>
           </li>
           <li>
-            <a href="#destination">Destination</a>
+            <a href="#destination">Destinations</a>
           </li>
           <li>
-            <a href="#offer">Offer</a>
+            <a href="#offer">Advantages</a>
           </li>
           <li>
-            <a href="#tour">Tour</a>
+            <a href="#tour">Popular Spaces</a>
           </li>
           <li>
-            <a href="#blog">Blog</a>
+            <a href="#blog">Testimonials</a>
           </li>
         </ul>
       </div>
